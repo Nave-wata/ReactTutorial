@@ -1,0 +1,10 @@
+{
+    "name": "react-tutorial",
+    "dockerComposeFile": "../docker-compose.yaml",
+    "service": "react-tutorial",
+    "workspaceFolder": "/usr/src/app",
+    "forwardPorts": [3000],
+    "remoteUser": "node",
+    "postCreateCommand": "chmod u+x ./.devcontainer/postCreateCommand.sh ./.devcontainer/postStartCommand.sh && ./.devcontainer/postCreateCommand.sh",
+    "postStartCommand": "./.devcontainer/postStartCommand.sh"
+}

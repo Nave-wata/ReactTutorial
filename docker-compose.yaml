@@ -1,0 +1,13 @@
+version: "3"
+services:
+  react-tutorial:
+    image: react-tutorial
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    user: node
+    volumes:
+      - ../ReactTutorial:/usr/src/app
+    ports:
+      - 3000:3000
+    tty: true
